@@ -1,9 +1,8 @@
-
 export default class Deck {
     constructor (config) {
         this.cards = config.cards;
     }
-
+    
     shuffle () {
         let cards = this.cards;
         if (cards.length > 1) {
