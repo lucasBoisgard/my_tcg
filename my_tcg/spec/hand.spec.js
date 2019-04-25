@@ -72,7 +72,7 @@ describe("Hand.getAllCards", function () {
     });
 });
 
-describe("Hand.getAllCards", function () {
+describe("Hand.getCardsCount", function () {
 
     it("check si le bon nombre de carte est return", function () {
             expect(hand.getCardsCount()).toBe(4);
