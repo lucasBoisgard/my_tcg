@@ -7,7 +7,6 @@ describe ( "Board.extends" ,  function ()  {
 
     it ("check si board a bien extends Hand", function () { 
         expect(board instanceof Hand).toBeTruthy();
-        expect(board instanceof Hand).toBeTruthy();
     });
 
 });
