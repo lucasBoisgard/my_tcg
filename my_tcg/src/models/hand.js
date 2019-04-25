@@ -1,12 +1,19 @@
 export default class Hand {
     constructor (config) {
-        // cards in hand
-        this.cards = config.cards;
-
         // limit of card in hand
         this.limit = config.limit || 7;
+        // set cards in hand
+        this.setCards(config.cards);
     }
-    
+
+    setCards (cards) {
+        if (cards.length > this.limit) {
+            cards.reverse().splice(0, cards.length - this.limit);
+            cards.reverse();
+        }
+        this.cards = cards;
+    }
+
     addCard (card) {
         if (this.cards.length < this.limit) {
             this.cards.push(card);
@@ -17,7 +24,7 @@ export default class Hand {
     }
 
     removeCard (position) {
-        return this.cards.splice(position, 1) || false;
+        return this.cards.splice(position, 1)[0] || false;
     }
 
     getAllCards () {
