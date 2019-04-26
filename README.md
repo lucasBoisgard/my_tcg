@@ -7,7 +7,8 @@ https://intra.epitech.eu/module/2018/W-WEB-310/PAR-3-4/acti-337734/project/file/
 
 ## Installation
 
-`$ npm install --save`
+`$ npm install --save` </br>
+`$ gulp`
 
 ## Run test
 
