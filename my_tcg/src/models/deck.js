@@ -25,6 +25,10 @@ export default class Deck {
         }
     }
 
+    insertAt(card, position = this.getCardsCount()) {
+        this.cards.splice(position, 0, card);
+    }
+
     getCardsCount () {
         return this.cards.length;
     }
